@@ -23,8 +23,8 @@ router.get("/", (req:any, res:any) => {
     res.send("Inicio")
 })
 
-const dbUser= 'public'
-const dbPassword = "public"
+const dbUser= process.env.DB_USER
+const dbPassword = process.env.DB_PASS
 
 mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@apiadas.3o9p7.mongodb.net/?retryWrites=true&w=majority&appName=Apiadas`)
 .then(() => {
