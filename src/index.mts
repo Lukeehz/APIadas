@@ -19,9 +19,7 @@ app.use(express.json());
 
 app.use("/apiadas", apiadas)
 
-router.get("/", (req:any, res:any) => {
-    res.send("Inicio")
-})
+app.use(err404);
 
 const dbUser= process.env.DB_USER
 const dbPassword = process.env.DB_PASS
