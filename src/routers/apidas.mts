@@ -31,4 +31,16 @@ apiadas.post("/api/register", async (req, res) => {
     }
 });
 
+apiadas.get("/api/jokes", async (req, res) => {
+    try {
+        const jokes = await Joke.find();
+        if (jokes.length === 0) {
+            return res.status(404).json({ msg: "Nenhuma piada encontrada" });
+        }
+        res.status(200).json(jokes);
+    } catch (err) {
+        res.status(500).json({ msg: "Erro ao buscar as piadas", error: err.message });
+    }
+});
+
 export default apiadas;
