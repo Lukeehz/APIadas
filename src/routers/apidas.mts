@@ -3,7 +3,7 @@ import Joke from '../models/Joke.mts';
 
 const apiadas = express.Router();
 
-apiadas.post("/api/register", async (req, res) => {
+apiadas.post("/api/register", async (req:any, res:any) => {
     const { joke, response } = req.body;
 
     if (!joke) {
@@ -31,7 +31,7 @@ apiadas.post("/api/register", async (req, res) => {
     }
 });
 
-apiadas.get("/api/jokes", async (req, res) => {
+apiadas.get("/api/jokes", async (req:any, res:any) => {
     try {
         const jokes = await Joke.find();
         if (jokes.length === 0) {
