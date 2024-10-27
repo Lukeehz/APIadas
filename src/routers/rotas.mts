@@ -19,5 +19,13 @@ router.use("/home",(req:any, res:any) =>{
         res.send(err);
     }
 })
+router.use("/register",(req:any, res:any) =>{
+    try{
+        res.sendFile(`${basePath}/html/register.html`);
+    }
+    catch(err){
+        res.send(err);
+    }
+})
 
 export default router;
