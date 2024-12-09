@@ -1,4 +1,5 @@
 import express from 'express';
+import axios from 'axios';
 import Joke from '../models/Joke.mts';
 
 const apiadas = express.Router();
@@ -43,4 +44,17 @@ apiadas.get("/api/jokes", async (req:any, res:any) => {
     }
 });
 
+apiadas.get("/api/jokes/select", async (req:any, res:any)=>{  
+
+    const jokes = await Joke.find()
+
+    const randomIndex = Math.floor(Math.random() * jokes.length);
+    const selectedJoke = jokes[randomIndex];
+
+    res.json({
+        joke: selectedJoke.joke,
+        response: selectedJoke.response
+    })
+
+})
 export default apiadas;

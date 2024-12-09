@@ -7,15 +7,24 @@
     <title>Register Piada</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Registrar piada</h1>
-        <form id="jokeForm">
-            <label for="piadaRegister">Registrar piada</label>
-            <input type="text" id="piadaRegister" name="joke" required>
-            <label for="respostaRegister">Registrar resposta</label>
-            <input type="text" id="respostaRegister" name="response" required>
-            <button type="submit" id="btnRegister">Registrar</button>
-        </form>
+    <div class="bodyHtml">
+        <div class="container">
+            <h1>Registrar piada</h1>
+            <form id="jokeForm">
+                <div>
+                    <label for="piadaRegister">Registrar piada</label>
+                    <input type="text" id="piadaRegister" name="joke" required>
+                </div>
+
+                <div>
+                    <label for="respostaRegister">Registrar resposta</label>
+                    <input type="text" id="respostaRegister" name="response" required>
+                </div>
+
+                <button class="btn" type="submit" id="btnRegister">Registrar</button>
+                <button class="btn"> <a href="/register">Home</a></button>
+            </form>
+        </div>
     </div>
     <script src="/JS/index.js"></script>
 </body>

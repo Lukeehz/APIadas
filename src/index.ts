@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import express from "express"
 import path from "path" 
 import cors from "cors"
+import axios from 'axios';
 import router from "./routers/rotas.mts"
 import apiadas from "./routers/apidas.mts"
 import err404 from "./routers/err404.mts"
@@ -22,7 +23,6 @@ app.use(cors())
 app.use(cors({
     origin: "http://localhost:3000",
 }))
-
 
 app.use("/", router)
 app.use("/apiadas", apiadas)
