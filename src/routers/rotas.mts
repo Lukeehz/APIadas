@@ -7,11 +7,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const basePath = path.join(__dirname, "../../public");
 
-router.use("/helloworld", (req:any, res:any) => {
+router.get("/", (req:any, res:any)=>{
+    res.redirect("/home")
+})
+
+router.get("/helloworld", (req:any, res:any) => {
     res.send("Hello World!");
 });
 
-router.use("/home",(req:any, res:any) =>{
+router.get("/home",(req:any, res:any) =>{
     try{
         res.sendFile(`${basePath}/html/index.html`);
     }
@@ -19,7 +23,7 @@ router.use("/home",(req:any, res:any) =>{
         res.send(err);
     }
 })
-router.use("/register",(req:any, res:any) =>{
+router.get("/register",(req:any, res:any) =>{
     try{
         res.sendFile(`${basePath}/html/register.html`);
     }

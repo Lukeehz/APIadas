@@ -42,7 +42,26 @@ apiadas.get("/api/jokes", async (req:any, res:any) => {
     } catch (err) {
         res.status(500).json({ msg: "Erro ao buscar as piadas", error: err.message });
     }
+
 });
+
+apiadas.get('/apiadas/api/jokes', async (req:any,res:any)=>{
+
+    const { id } = req.query;
+    if (id){
+        try{
+            const joke = await Joke.findOne({id: id})
+            if(!joke){
+                res.status(404).json({msg: "Piada não encontrada"})
+            }
+            res.status(200).json(Joke)
+        }catch (err){
+            res.status(500).json({msg: "Erro ao buscar a piada", error: err.message})
+        }
+    }
+    
+
+})
 
 apiadas.get("/api/jokes/select", async (req:any, res:any)=>{  
 
