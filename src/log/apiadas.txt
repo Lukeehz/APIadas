@@ -1,0 +1,20 @@
+2025-01-03 13:37:12 [32minfo[39m: Piada registrada com sucesso! ID: 31 - Data e Hora: 03/01/2025, 13:37:12
+2025-01-03 13:39:07 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 31 - Piada: O que o programador disse depois de meditar? - Data e Hora: 03/01/2025, 13:39:07
+2025-01-03 13:39:51 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 16 - Data e Hora: 03/01/2025, 13:39:51
+2025-01-03 13:39:53 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 26 - Data e Hora: 03/01/2025, 13:39:53
+2025-01-03 13:39:53 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 7 - Data e Hora: 03/01/2025, 13:39:53
+2025-01-03 13:39:53 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 23 - Data e Hora: 03/01/2025, 13:39:53
+2025-01-03 15:17:55 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 30 - Data e Hora: 03/01/2025, 15:17:55
+2025-01-03 15:17:56 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 20 - Data e Hora: 03/01/2025, 15:17:56
+2025-01-03 15:17:57 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 2 - Data e Hora: 03/01/2025, 15:17:57
+2025-01-03 15:46:58 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 6 - Data e Hora: 03/01/2025, 15:46:58
+2025-01-03 15:46:59 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 6 - Data e Hora: 03/01/2025, 15:46:59
+2025-01-03 15:46:59 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 18 - Data e Hora: 03/01/2025, 15:46:59
+2025-01-03 15:47:00 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 9 - Data e Hora: 03/01/2025, 15:47:00
+2025-01-03 15:47:01 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 30 - Data e Hora: 03/01/2025, 15:47:01
+2025-01-03 15:47:02 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 24 - Data e Hora: 03/01/2025, 15:47:02
+2025-01-03 15:47:02 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 6 - Data e Hora: 03/01/2025, 15:47:02
+2025-01-03 15:47:03 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 12 - Data e Hora: 03/01/2025, 15:47:03
+2025-01-03 15:47:03 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 28 - Data e Hora: 03/01/2025, 15:47:03
+2025-01-03 15:47:03 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 6 - Data e Hora: 03/01/2025, 15:47:03
+2025-01-03 15:47:03 [32minfo[39m: Piada aleatória selecionada com sucesso! ID: 4 - Data e Hora: 03/01/2025, 15:47:03

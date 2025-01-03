@@ -6,7 +6,9 @@ import cors from "cors";
 import router from "./routers/rotas.mts";
 import apiadas from "./routers/apidas.mts";
 import err404 from "./routers/err404.mts";
+import logger from "./log/logger.ts"
 import { fileURLToPath } from 'url';
+
 
 const app = express();
 const port = 80;

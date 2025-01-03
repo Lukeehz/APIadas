@@ -1,6 +1,7 @@
 import express from 'express';
 import axios from 'axios';
 import Joke from '../models/Joke.mts';
+import logger from "../log/logger.ts"
 
 const apiadas = express.Router();
 
@@ -26,8 +27,12 @@ apiadas.post("/api/register", async (req:any, res:any) => {
 
         await newJoke.save();
 
+
+        logger.info(`Piada registrada com sucesso! ID: ${newId} - Data e Hora: ${new Date().toLocaleString()}`);
+
         res.status(201).json({ msg: "Piada registrada com sucesso!" });
     } catch (err) {
+        logger.error(`Erro ao buscar as piadas: ${err.message}`);  // Log de erro
         res.status(500).json({ msg: "Erro ao registrar a piada", error: err.message });
     }
 });
@@ -69,6 +74,9 @@ apiadas.get("/api/jokes/select", async (req:any, res:any)=>{
 
     const randomIndex = Math.floor(Math.random() * jokes.length);
     const selectedJoke = jokes[randomIndex];
+
+    logger.info(`Piada aleatória selecionada com sucesso! ID: ${selectedJoke.id} - Data e Hora: ${new Date().toLocaleString()}`);
+
 
     res.json({
         joke: selectedJoke.joke,
