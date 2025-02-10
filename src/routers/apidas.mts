@@ -29,7 +29,7 @@ apiadas.post("/api/register", async (req:any, res:any) => {
 
 
         logger.info(`Piada registrada com sucesso! ID: ${newId} - Data e Hora: ${new Date().toLocaleString()}`);
-
+        console.log(`Piada registrada com ID ${newId}`)
         res.status(201).json({ msg: "Piada registrada com sucesso!" });
     } catch (err) {
         logger.error(`Erro ao buscar as piadas: ${err.message}`);  // Log de erro
@@ -52,8 +52,7 @@ apiadas.get("/api/jokes", async (req:any, res:any) => {
 
 apiadas.get('/apiadas/api/jokes', async (req:any,res:any)=>{
 
-    const { id } = req.query;
-    if (id){
+     if (id){
         try{
             const joke = await Joke.findOne({id: id})
             if(!joke){
@@ -76,7 +75,7 @@ apiadas.get("/api/jokes/select", async (req:any, res:any)=>{
     const selectedJoke = jokes[randomIndex];
 
     logger.info(`Piada aleatória selecionada com sucesso! ID: ${selectedJoke.id} - Data e Hora: ${new Date().toLocaleString()}`);
-
+    console.log(`Piada selecionada do ID ${selectedJoke.id}`)
 
     res.json({
         joke: selectedJoke.joke,
