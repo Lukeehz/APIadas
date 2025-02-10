@@ -27,8 +27,8 @@ app.use("/", router);
 app.use("/apiadas", apiadas);
 app.use(err404);
 
-const dbUser = process.env.DB_USER;
-const dbPassword = process.env.DB_PASS;
+const dbUser = "public";
+const dbPassword ="RipGLm9VYI3jJBc0";
 
 mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@apiadas.3o9p7.mongodb.net/?retryWrites=true&w=majority&appName=Apiadas`)
 .then(() => {
